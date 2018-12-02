@@ -1,0 +1,164 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	-webkit-box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	        box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #5A717B;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.checkbox {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 180px;
+    left: 180px;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox .btn {
+    position: relative;
+    z-index: 5;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.checkbox input:checked ~ .btn {
+    border-width: 14px;
+    background: #5FD17A;
+    -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 2px 4px 0 rgba(0, 0, 0, 0);
+            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 2px 4px 0 rgba(0, 0, 0, 0);
+}
+.line {
+	top:-20px;
+	left:20px;
+	position:absolute;
+	background:#fff;
+	width:2px;
+	height:15px;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	opacity:0;
+}
+
+.line-2 {
+	-webkit-transform: rotate(45deg) translateY(-15px) translateX(25px) scaleY(1);
+	    -ms-transform: rotate(45deg) translateY(-15px) translateX(25px) scaleY(1);
+	        transform: rotate(45deg) translateY(-15px) translateX(25px) scaleY(1);
+}
+.line-3 {
+	-webkit-transform: rotate(90deg) translateY(-35px) translateX(33px) scaleY(1);
+	    -ms-transform: rotate(90deg) translateY(-35px) translateX(33px) scaleY(1);
+	        transform: rotate(90deg) translateY(-35px) translateX(33px) scaleY(1);
+}
+.line-4 {
+	-webkit-transform: rotate(-45deg) translateY(60px) translateX(-25px) scaleY(1);
+	    -ms-transform: rotate(-45deg) translateY(60px) translateX(-25px) scaleY(1);
+	        transform: rotate(-45deg) translateY(60px) translateX(-25px) scaleY(1);
+}
+.line-5 {
+	-webkit-transform: rotate(0deg) translateY(67px) translateX(0px) scaleY(1);
+	    -ms-transform: rotate(0deg) translateY(67px) translateX(0px) scaleY(1);
+	        transform: rotate(0deg) translateY(67px) translateX(0px) scaleY(1);
+}
+.line-6 {
+	-webkit-transform: rotate(90deg) translateY(35px) translateX(33px) scaleY(1);
+	    -ms-transform: rotate(90deg) translateY(35px) translateX(33px) scaleY(1);
+	        transform: rotate(90deg) translateY(35px) translateX(33px) scaleY(1);
+}
+.line-7 {
+	-webkit-transform: rotate(45deg) translateY(60px) translateX(25px) scaleY(1);
+	    -ms-transform: rotate(45deg) translateY(60px) translateX(25px) scaleY(1);
+	        transform: rotate(45deg) translateY(60px) translateX(25px) scaleY(1);
+}
+.line-8 {
+	-webkit-transform: rotate(-45deg) translateY(-15px) translateX(-25px) scaleY(1);
+	    -ms-transform: rotate(-45deg) translateY(-15px) translateX(-25px) scaleY(1);
+	        transform: rotate(-45deg) translateY(-15px) translateX(-25px) scaleY(1);
+}
+.checkbox input:checked ~ .lineWraper .line-1 {
+	top:-50px;
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-2 {
+	-webkit-transform: rotate(45deg) translateY(-50px) translateX(25px) scaleY(1);
+	    -ms-transform: rotate(45deg) translateY(-50px) translateX(25px) scaleY(1);
+	        transform: rotate(45deg) translateY(-50px) translateX(25px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-3 {
+	-webkit-transform: rotate(90deg) translateY(-60px) translateX(33px) scaleY(1);
+	    -ms-transform: rotate(90deg) translateY(-60px) translateX(33px) scaleY(1);
+	        transform: rotate(90deg) translateY(-60px) translateX(33px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-4 {
+	-webkit-transform: rotate(-45deg) translateY(95px) translateX(-25px) scaleY(1);
+	    -ms-transform: rotate(-45deg) translateY(95px) translateX(-25px) scaleY(1);
+	        transform: rotate(-45deg) translateY(95px) translateX(-25px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-5 {
+	top:20px;
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-6 {
+	-webkit-transform: rotate(90deg) translateY(60px) translateX(33px) scaleY(1);
+	    -ms-transform: rotate(90deg) translateY(60px) translateX(33px) scaleY(1);
+	        transform: rotate(90deg) translateY(60px) translateX(33px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-7 {
+	-webkit-transform: rotate(45deg) translateY(100px) translateX(25px) scaleY(1);
+	    -ms-transform: rotate(45deg) translateY(100px) translateX(25px) scaleY(1);
+	        transform: rotate(45deg) translateY(100px) translateX(25px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+.checkbox input:checked ~ .lineWraper .line-8 {
+	-webkit-transform: rotate(-45deg) translateY(-50px) translateX(-25px) scaleY(1);
+	    -ms-transform: rotate(-45deg) translateY(-50px) translateX(-25px) scaleY(1);
+	        transform: rotate(-45deg) translateY(-50px) translateX(-25px) scaleY(1);
+	-webkit-animation: click .3s ease-in-out;
+	        animation: click .3s ease-in-out;
+}
+
+@-webkit-keyframes click {
+	0% {opacity:0;}
+	50% {opacity:1;}
+	100%{opacity:0;}
+}
+
+@keyframes click {
+	0% {opacity:0;}
+	50% {opacity:1;}
+	100%{opacity:0;}
+}
